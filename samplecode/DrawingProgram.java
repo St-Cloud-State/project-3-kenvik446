@@ -1,5 +1,5 @@
 public class DrawingProgram {
-  public static void main(String[] args){
+  public static void main(String[] args) {
     Model model = new Model();
     UndoManager undoManager = new UndoManager();
     UndoManager.setModel(model);
@@ -9,6 +9,6 @@ public class DrawingProgram {
     Model.setView(view);
     Command.setUndoManager(undoManager);
     Command.setModel(model);
-    view.show();
+    view.setVisible(true);
   }
 }
